@@ -3,7 +3,7 @@
 ![Circuit Overview](./Circuit_Overview.png)
 
 ## About the Project
-This project is a **digital design** study. The goal is to design and simulate a simplified electronic calculator capable of performing 4 arithmetic operations (addition, subtraction, multiplication, and division) with operands limited to 4-digit decimal integers. The project incorporates digital design components such as a 7-segment hex display, registers, RS latches, multiplexers, priority encodes, three-state buffers and numerous logic gates.
+This project is a **digital design** study. The goal is to design and simulate a simplified electronic calculator capable of performing 4 arithmetic operations (addition, subtraction, multiplication, and division) with operands limited to 4-digit decimal integers. The project incorporates digital design components such as a 7-segment hex displays, registers, RS latches, multiplexers, priority encodes, three-state buffers and numerous logic gates.
 
 ## Requirements
 To run the project, the following software must be installed:
