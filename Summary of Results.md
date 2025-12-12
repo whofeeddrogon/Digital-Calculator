@@ -1,4 +1,4 @@
-## 1. Summary of Results
+## Summary of Results
 The 16-bit signed integer calculator project was successfully designed, simulated, and verified using the *Digital* software. The final system meets all design requirements and constraints outlined in the project specifications.
 
 Key achievements include:

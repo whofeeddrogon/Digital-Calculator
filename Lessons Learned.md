@@ -1,4 +1,4 @@
-## 2. Lessons Learned
+## Lessons Learned
 Throughout the design and debugging process, several critical technical challenges were encountered. Overcoming these provided valuable insights into digital logic design and simulation nuances.
 
 ### A. Component Naming & External Files
@@ -20,6 +20,7 @@ Throughout the design and debugging process, several critical technical challeng
 * **Issue:** The standard "Hex Display" component lacks an Enable pin, making it difficult to turn off the display during an error state.
 * **Resolution:** A workaround was implemented by using a **Controlled Buffer** on the data line. Cutting the data flow (High-Z) effectively blanks the display.
 * **Lesson:** When high-level components lack specific control pins, data-path interruption can serve as an effective alternative control mechanism.
+* **Additional Lesson:** The only way to turn off the 7-segment hex display is to cut its power. A control bit was created for each operand to check if a value was entered using a three-state buffer, controlling the signal to the display. This way, the displays do not light up when no value is present.
 
 ### E. Propagation Delay & Signal Synchronization
 * **Issue:** Logic gates introduced a slight propagation delay on one of the input paths to the Register, while the control signal arrived instantly. This timing mismatch (Race Condition) caused the Register to latch incorrect data or glitches before the input logic had fully settled.

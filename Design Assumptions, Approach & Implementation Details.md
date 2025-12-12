@@ -15,6 +15,7 @@
     * Flag indicators (Negative sign and Error status).
     * Operand sequencing (Tracking whether the system is currently inputting Operand 1 or Operand 2).
 * **Data Storage:** Standard 16-bit **Registers** are utilized to store the numerical values of Operand 1 and Operand 2.
+* **Direct Calculation Prevention:** Directly pressing the `=` key without entering a value for the second operand no longer results in a calculation with the second operand being considered as zero. The system now requires at least a manual entry of `0` for the second operand before pressing `=`.
 
 ## 3. Arithmetic Logic Unit (ALU)
 * **Hybrid Implementation:** The arithmetic logic uses a combination of built-in components and hardware description language:
